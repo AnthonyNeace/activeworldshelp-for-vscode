@@ -3,30 +3,31 @@
 	"name": "ActiveWorlds Help",
 	"patterns": [
 		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
+			"include": "#expression"
+		}	
 	],
 	"repository": {
+		"expression": {
+			"patterns": [{ "include": "#keywords" }, { "include": "#topics" }]
+		  },		
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.awh",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(help_base|topic|endtopic)\\b"
 			}]
 		},
-		"strings": {
-			"name": "string.quoted.double.awh",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.awh",
-					"match": "\\\\."
-				}
-			]
-		}
+		"topics": {
+			"begin": "topic",
+			"end": "endtopic",
+			"beginCaptures": {
+			  "0": { "name": "punctuation.topic.open" }
+			},
+			"endCaptures": {
+			  "0": { "name": "punctuation.topic.close" }
+			},
+			"name": "expression.group",
+			"patterns": [{ "include": "#expression" }]			
+		  }		
 	},
 	"scopeName": "source.activeworlds.help"
 }
