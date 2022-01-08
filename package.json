@@ -1,0 +1,33 @@
+{
+    "name": "awh-for-vscode",
+    "displayName": "ActiveWorlds Help (awh) for VSCode",
+    "description": "Language support for Active Worlds Help/User Guides (.awh)",
+    "version": "0.0.1",
+    "publisher": "AnthonyNeace",
+    "homepage": "https://github.com/anthonyneace/awh-for-vscode",    
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "keywords": [
+		"awh",
+		"activeworlds",
+		"active-worlds",
+		"active worlds"
+	],    
+    "contributes": {
+        "languages": [{
+            "id": "awh",
+            "aliases": ["ActiveWorlds Help", "awh"],
+            "extensions": [".awh"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "awh",
+            "scopeName": "source.activeworlds.help",
+            "path": "./syntaxes/awh.tmLanguage.json"
+        }]
+    }
+}
