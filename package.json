@@ -4,7 +4,7 @@
     "description": "Language support for Active Worlds Help/User Guides (.awh)",
     "version": "1.0.0",
     "publisher": "AnthonyNeace",
-    "homepage": "https://github.com/AnthonyNeace/activeworldshelp-for-vscode/",    
+    "homepage": "https://github.com/AnthonyNeace/activeworldshelp-for-vscode/",
     "engines": {
         "vscode": "^1.63.0"
     },
@@ -17,7 +17,7 @@
 		"activeworlds",
 		"active-worlds",
 		"active worlds"
-	],    
+	],
     "repository": {
         "type": "git",
         "url": "https://github.com/AnthonyNeace/activeworldshelp-for-vscode.git"

@@ -9,8 +9,7 @@
 	"repository": {
 		"expression": {
 			"patterns": [
-				{ "include": "#keywords" }, 
-				{ "include": "#topics" },
+				{ "include": "#keywords" },
 				{ "include": "#teleport" },
 				{ "include": "#strings" }
 			]
