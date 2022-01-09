@@ -17,6 +17,10 @@
 		"active-worlds",
 		"active worlds"
 	],    
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AnthonyNeace/activeworldshelp-for-vscode.git"
+    },
     "contributes": {
         "languages": [{
             "id": "awh",
