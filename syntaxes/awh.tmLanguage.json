@@ -8,12 +8,29 @@
 	],
 	"repository": {
 		"expression": {
-			"patterns": [{ "include": "#keywords" }, { "include": "#topics" }]
+			"patterns": [
+				{ "include": "#keywords" }, 
+				{ "include": "#topics" },
+				{ "include": "#teleport" },
+				{ "include": "#strings" }
+			]
 		  },		
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.awh",
 				"match": "\\b(help_base|topic|endtopic)\\b"
+			}]
+		},
+		"teleport": {
+			"patterns": [{
+				"name": "teleport.awh",
+				"match": "http://objects.activeworlds.com/cgi-bin/teleport.cgi\\?.*$"
+			}]
+		},
+		"strings": {
+			"patterns": [{
+				"name": "strings.awh",
+				"match": "\".*\""
 			}]
 		}
 	},
