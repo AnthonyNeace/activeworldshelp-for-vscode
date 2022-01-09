@@ -1,10 +1,10 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "ActiveWorlds Help",	
+	"name": "ActiveWorlds Help",
 	"patterns": [
 		{
 			"include": "#expression"
-		}	
+		}
 	],
 	"repository": {
 		"expression": {
@@ -13,7 +13,7 @@
 				{ "include": "#teleport" },
 				{ "include": "#strings" }
 			]
-		  },		
+		  },
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.awh",

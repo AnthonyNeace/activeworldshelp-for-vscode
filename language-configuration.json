@@ -5,7 +5,7 @@
   ],
   // symbols that are auto closed when typing
   "autoClosingPairs": [
-    ["topic ", "\"\"\nendtopic"],  
+    ["topic ", "\"\"\nendtopic"],
     ["\"", "\""],
   ],
   // symbols that can be used to surround a selection
