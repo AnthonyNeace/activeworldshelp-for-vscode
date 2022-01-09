@@ -28,10 +28,15 @@
 			}]
 		},
 		"strings": {
-			"patterns": [{
-				"name": "strings.awh",
-				"match": "\".*\""
-			}]
+			"name": "string.quoted.double.awh",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.awh",
+					"match": "\\\\."
+				}
+			]
 		}
 	},
 	"scopeName": "source.activeworlds.help"
