@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "ActiveWorlds Help",
+	"name": "ActiveWorlds Help",	
 	"patterns": [
 		{
 			"include": "#expression"
@@ -15,19 +15,7 @@
 				"name": "keyword.control.awh",
 				"match": "\\b(help_base|topic|endtopic)\\b"
 			}]
-		},
-		"topics": {
-			"begin": "topic",
-			"end": "endtopic",
-			"beginCaptures": {
-			  "0": { "name": "punctuation.topic.open" }
-			},
-			"endCaptures": {
-			  "0": { "name": "punctuation.topic.close" }
-			},
-			"name": "expression.group",
-			"patterns": [{ "include": "#expression" }]			
-		  }		
+		}
 	},
 	"scopeName": "source.activeworlds.help"
 }
